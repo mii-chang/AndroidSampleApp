@@ -30,7 +30,7 @@ android {
     flavorDimensions("version")
     productFlavors {
         create("demo") {
-
+            buildConfigField("String", "API_URL", "\"https://qiita.com/api/v2/\"")
         }
     }
     buildFeatures {
@@ -59,4 +59,11 @@ dependencies {
     implementation(Dep.AndroidX.appcompat)
     implementation(Dep.AndroidX.material)
     implementation(Dep.AndroidX.constraint)
+    implementation(Dep.Retrofit.core)
+    implementation(Dep.Retrofit.converterMoshi)
+    implementation(Dep.Moshi.core)
+    kapt(Dep.Moshi.kotlinCodegen)
+    implementation(Dep.Moshi.moshiKotlin)
+    implementation(Dep.OkHttp.core)
+    implementation(Dep.OkHttp.logging)
 }
