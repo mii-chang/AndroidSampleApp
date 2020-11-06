@@ -15,6 +15,10 @@ object Dep {
         const val coreKtx = "androidx.core:core-ktx:1.3.2"
         const val material = "com.google.android.material:material:1.1.0"
         const val constraint = "androidx.constraintlayout:constraintlayout:2.0.2"
+        const val roomRunTime = "androidx.room:room-runtime:2.2.5"
+        const val roomCompiler = "androidx.room:room-compiler:2.2.5"
+        const val roomKtx = "androidx.room:room-ktx:2.2.5"
+        const val paging = "androidx.paging:paging-runtime:2.1.2"
     }
 
     object OkHttp {
