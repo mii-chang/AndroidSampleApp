@@ -11,10 +11,4 @@ interface QiitaApi {
         @Query("page") page: Int,
         @Query("per_page") per: Int
     ): List<ArticleJson>
-
-    @GET("items/{item_id}")
-    suspend fun getArticle(
-        @Path("item_id") itemId: String
-    ): ArticleJson
-
 }
